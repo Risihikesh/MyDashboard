@@ -1,5 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import arrowIcon from '../assets/arrowRight.svg';
+
 
 function Schedule() {
 
@@ -42,7 +44,7 @@ function Schedule() {
              color:" #858585"
 
         }} to='#seeAll'><span>See All</span>
-        <img src="../src/assets/arrowRight.svg" alt="" /></Link>
+        <img src={arrowIcon} alt="" /></Link>
         </div>
         <div>
             {scheduleData.map((ele, index)=>{

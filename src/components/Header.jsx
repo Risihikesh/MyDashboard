@@ -1,6 +1,9 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 import { googleLogout } from '@react-oauth/google';
+import notificationIcon from '../assets/notifications.svg';
+import searchIcon from '../assets/search.svg';
+
 
 
 function Header() {
@@ -40,9 +43,9 @@ function Header() {
             <div style={{ display: "flex", alignItems: "center", gap: "30px" }}>
                 <div style={{ display: "flex", alignContent: "center" }}>
                     <input style={{ width: "140px", height: "30px", padding: "0 20px", border: "transparent", borderRadius: "10px 0 0 10px" }} type="search" placeholder='Search...' />
-                    <img style={{ backgroundColor: "#FFFFFF", width: "20px", height: "30px", borderRadius: "0 10px 10px 0" }} src="../src/assets/search.svg" alt="search" />
+                    <img style={{ backgroundColor: "#FFFFFF", width: "20px", height: "30px", borderRadius: "0 10px 10px 0" }} src={searchIcon} alt="search" />
                 </div>
-                <img height="20px" width="18px" src="../src/assets/notifications.svg" alt="notific" />
+                <img height="20px" width="18px" src={notificationIcon} alt="notific" />
                 <img style={{ height: "30px", weight: "30px", borderRadius: "50%" }} src={picture ? picture.data.picture : "/assets/userImg.svg"} alt="userImg" onClick={logOut} />
             </div>
         </div>

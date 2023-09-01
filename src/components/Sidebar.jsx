@@ -1,6 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import styles from '../components/css/Sidebar.module.css'
+import dashboardIcon from '../assets/dashboard.svg'
+import transactionsIcon from '../assets/transactions.svg';
+import schedulesIcon from '../assets/schedules.svg';
+import usersIcon from '../assets/users.svg';
+import settingsIcon from '../assets/settings.svg';
 
 function Sidebar() {
     const linkStyles={
@@ -9,27 +14,27 @@ function Sidebar() {
     }
     const options = [
         {
-            icon: "../src/assets/dashboard.svg",
+            icon: dashboardIcon,
             title: "Dashboard",
             link: "/dashboard",
         },
         {
-            icon: "../src/assets/transactions.svg",
+            icon: transactionsIcon,
             title: "Transactions",
             link: "/transactions",
         },
         {
-            icon: "../src/assets/schedules.svg",
+            icon: schedulesIcon,
             title: "Schedules",
             link: "/schedules",
         },
         {
-            icon: "../src/assets/users.svg",
+            icon: usersIcon,
             title: "Users",
             link: "/users",
         },
         {
-            icon: "../src/assets/settings.svg",
+            icon: settingsIcon,
             title: "Settings",
             link: "/settings",
         },

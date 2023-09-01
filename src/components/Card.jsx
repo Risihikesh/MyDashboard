@@ -1,29 +1,34 @@
 import React from 'react'
 import styles from "../components/css/Card.module.css"
+import revenueIcon from '../assets/revenue.svg'
+import transactionIcon from '../assets/totalTransactions.svg'
+import likesIcon from '../assets/likes.svg'
+import totalUserIcon from '../assets/totalUsers.svg'
+
 
 function Card() {
 
     const cards = [
         {
-            icon: "../src/assets/revenue.svg",
+            icon: revenueIcon,
             title: "Total Revenues",
             text: "$2,129,430",
             bgColor: "#DDEFE0"
         },
         {
-            icon: "../src/assets/totalTransactions.svg",
+            icon: transactionIcon,
             title: "Total Transactions",
             text: "1,520",
             bgColor: "#F4ECDD"
         },
         {
-            icon: "../src/assets/likes.svg",
+            icon: likesIcon,
             title: "Total Likes",
             text: "9,721",
             bgColor: "#EFDADA"
         },
         {
-            icon: "../src/assets/totalUsers.svg",
+            icon: totalUserIcon,
             title: "Total Users",
             text: "892",
             bgColor: "#DEE0EF"
